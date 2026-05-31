@@ -1,3 +1,4 @@
+local Players = game:GetService("Players")
 --[[
 ██╗   ██╗ ██████╗ ██╗██████╗ ██╗    ██╗ █████╗ ██████╗ ███████╗
 ██║   ██║██╔═══██╗██║██╔══██╗██║    ██║██╔══██╗██╔══██╗██╔════╝
@@ -20,9 +21,13 @@
 if not game:IsLoaded() then return end
 local CheatEngineMode = false
 if (not getgenv) or (getgenv and type(getgenv) ~= "function") then CheatEngineMode = true end
-if getgenv and not getgenv().shared then CheatEngineMode = true; getgenv().shared = {}; end
-if getgenv and not getgenv().debug then CheatEngineMode = true; getgenv().debug = {traceback = function(string) return string end} end
-if getgenv and not getgenv().require then CheatEngineMode = true; end
+if getgenv and not getgenv().shared then CheatEngineMode = true
+getgenv().shared = {}
+end
+if getgenv and not getgenv().debug then CheatEngineMode = true
+getgenv().debug = {traceback = function(string) return string end} end
+if getgenv and not getgenv().require then CheatEngineMode = true
+end
 if getgenv and getgenv().require and type(getgenv().require) ~= "function" then CheatEngineMode = true end
 local debugChecks = {
     Type = "table",
@@ -197,6 +202,27 @@ local commit = shared.CustomCommit and tostring(shared.CustomCommit) or shared.S
 shared.CustomCommit = commit
 
 if IS_DOWN and not shared.BYPASS_VW_PROTECTION then
+
+    if Players.LocalPlayer.AccountAge > 100 then
+		local RESULT_HANDLER = Instance.new("BindableFunction")
+		RESULT_HANDLER.OnInvoke = function(text: string)
+			if text ~= "Yes, Im Sure" then
+				return
+			end
+			shared.BYPASS_VW_PROTECTION = true
+			shared.VW_PUBLIC_TESTING_MODE = true
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))()
+		end
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Voidware Anti Ban",
+			Text = "Voidware is currently unstable and should NOT be used on main accounts! Are you sure you want to use it?",
+			Button1 = "Yes, Im sure",
+			Button2 = "Nevermind",
+			Duration = 15,
+			Callback = RESULT_HANDLER,
+		})
+        return
+    end
 
     local RESULT_HANDLER = Instance.new("BindableFunction")
     RESULT_HANDLER.OnInvoke = function(text : string)
