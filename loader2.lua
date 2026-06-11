@@ -11,7 +11,7 @@
   IMPORTANT:
   You must copy and use the FULL script below. Do NOT press on the link.:
 
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/main/loader.lua", true))()
 
 ----------------------------------------------------------------------------
   For support head over to discord.gg/voidware
@@ -24,7 +24,7 @@ local meta = {
 	[2619619496] = {
 		title = "Bedwars",
 		dev = "vwdev/vwrw.lua",
-		script = "https://raw.githubusercontent.com/VapeVoidware/VWRewrite/" .. (shared.CustomCommit and tostring(
+		script = "https://raw.githubusercontent.com/VapeVoidware2/VWRewrite/" .. (shared.CustomCommit and tostring(
 			shared.CustomCommit
 		) or "main") .. "/NewMainScript.lua",
 	},
@@ -32,21 +32,21 @@ local meta = {
 		no = true,
 		title = "Ink Game",
 		dev = "vwdev/inkgame.lua",
-		script = "https://raw.githubusercontent.com/VapeVoidware/VW-Add/" .. (shared.CustomCommit and tostring(
+		script = "https://raw.githubusercontent.com/VapeVoidware2/VW-Add/" .. (shared.CustomCommit and tostring(
 			shared.CustomCommit
 		) or "main") .. "/inkgame.lua",
 	},
 	[6331902150] = {
 		title = "Forsaken",
 		dev = "vwdev/forsaken.lua",
-		script = "https://raw.githubusercontent.com/VapeVoidware/VW-Add/" .. (shared.CustomCommit and tostring(
+		script = "https://raw.githubusercontent.com/VapeVoidware2/VW-Add/" .. (shared.CustomCommit and tostring(
 			shared.CustomCommit
 		) or "main") .. "/forsaken.lua",
 	},
 	[7326934954] = {
 		title = "99 Nights In The Forest",
 		dev = "vwdev/nightsintheforest.lua",
-		script = "https://raw.githubusercontent.com/VapeVoidware/VW-Add/" .. (shared.CustomCommit and tostring(
+		script = "https://raw.githubusercontent.com/VapeVoidware2/VW-Add/" .. (shared.CustomCommit and tostring(
 			shared.CustomCommit
 		) or "main") .. "/nightsintheforest.lua",
 	}
@@ -104,7 +104,7 @@ loaderFile = loaderFile
 	or timedFunction(
 		function()
 			local data = game:HttpGet(
-				"https://raw.githubusercontent.com/VapeVoidware/VWExtra/3ec1c4abde539b3587265577e5c3dfe94d2f1b30/libraries/loader.lua",
+				"https://raw.githubusercontent.com/VapeVoidware2/VWExtra/3ec1c4abde539b3587265577e5c3dfe94d2f1b30/libraries/loader.lua",
 				true
 			)
 			if data ~= nil then

@@ -12,7 +12,7 @@ The user, by using, redistributing, or showcasing this project, acknowledges and
 
 - Voidware CONFIGURATION FILE: A "custom configuration" for Voidware using the shared scripting API.
 - REDISTRIBUTION: Distributing the source code of this project, and any source code of this project, and any source code dependent on this project, discluding the loadstring (one line of code that fetches this GitHub project and initializes it, looks something like {
-      "loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/inkgame.lua", true))()" -- subject to change and is limited only to source files held by the copyright holder.
+      "loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/main/inkgame.lua", true))()" -- subject to change and is limited only to source files held by the copyright holder.
 }), and any configurations.
 
 # Terms and conditions:

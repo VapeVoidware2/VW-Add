@@ -11,7 +11,7 @@
   IMPORTANT:
   You must copy and use the FULL script below. Do NOT press on the link.:
 
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/main/loader.lua", true))()
 
 ----------------------------------------------------------------------------
   For support head over to discord.gg/voidware
@@ -223,4 +223,4 @@ if suc and res and shared.CustomCommit == nil then
     end)
 end--]]
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/"..tostring(commit).."/newnightsintheforest.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/"..tostring(commit).."/newnightsintheforest.lua", true))()

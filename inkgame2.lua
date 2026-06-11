@@ -12,7 +12,7 @@ local Players = game:GetService("Players")
   IMPORTANT:
   You must copy and use the FULL script below. Do NOT press on the link.:
 
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/main/loader.lua", true))()
 
 ----------------------------------------------------------------------------
   For support head over to discord.gg/voidware
@@ -211,7 +211,7 @@ if IS_DOWN and not shared.BYPASS_VW_PROTECTION then
 			end
 			shared.BYPASS_VW_PROTECTION = true
 			shared.VW_PUBLIC_TESTING_MODE = true
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/main/loader.lua", true))()
 		end
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Voidware Anti Ban",
@@ -229,7 +229,7 @@ if IS_DOWN and not shared.BYPASS_VW_PROTECTION then
         if text ~= "Execute Public Beta Version" then return end
         shared.BYPASS_VW_PROTECTION = true
         shared.VW_PUBLIC_TESTING_MODE = true
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/main/loader.lua", true))()
     end
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Voidware Public Testing",
@@ -282,7 +282,7 @@ else
             if text ~= "Execute Public Beta Version" then return end
             shared.AcceptedRisksOfBan = true
             shared.TestingMode = true
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/main/loader.lua", true))()
         end
         game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "Executor Status",
@@ -344,7 +344,7 @@ else
     if shared.VW_PUBLIC_TESTING_MODE then
         local RESULT_HANDLER = Instance.new("BindableFunction")
         RESULT_HANDLER.OnInvoke = function(text : string)
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/"..tostring(commit).."/something.lua", true))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/"..tostring(commit).."/something.lua", true))()
         end
         game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "Voidware Public Testing",
@@ -358,9 +358,9 @@ else
     task.spawn(function()
         pcall(function()
             if not hookmetamethod then return end
-            --loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/"..tostring(commit).."/inkgamereducer.lua", true))()
+            --loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/"..tostring(commit).."/inkgamereducer.lua", true))()
         end)
     end)
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/"..tostring(commit).."/newinkgame.lua", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware2/VW-Add/"..tostring(commit).."/newinkgame.lua", true))()
 end
