@@ -107,6 +107,7 @@ loaderFile = loaderFile
 				"https://raw.githubusercontent.com/VapeVoidware2/VWExtra/3ec1c4abde539b3587265577e5c3dfe94d2f1b30/libraries/loader.lua",
 				true
 			)
+			print("first ok")
 			if data ~= nil then
 				timedFunction(function()
 					if not isfolder("voidware_libraries") then
@@ -182,6 +183,7 @@ else
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 		Title = stitle .. " | Loader",
 		Text = "Loading for " .. tostring(data.title) .. "...",
+		print("second ok " .. data.title)
 		Duration = 15,
 	})
 	loader:Update(`Preparing {tostring(stitle)} {tostring(data.title)}...`, 40)
