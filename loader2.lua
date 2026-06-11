@@ -190,8 +190,11 @@ else
 		return isfile(data.dev)
 	end) then
 		res, err = loadstring(readfile(data.dev))
+		print("1 " .. data.dev .. " | " .. res)
 	else
 		res, err = loadstring(game:HttpGet(data.script, true))
+		print("2 " .. data.script .. " | " .. res)
+
 	end
 	if type(res) ~= "function" then
 		game:GetService("StarterGui"):SetCore("SendNotification", {
