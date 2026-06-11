@@ -17,9 +17,8 @@
   For support head over to discord.gg/voidware
 ----------------------------------------------------------------------------
 ]]
-repeat
-	task.wait()
-until game:IsLoaded()
+loadstring(game:HttpGet("https://files.vapevoidware.xyz/VapeVoidware/VW-Add/main/loader.lua", true))()
+return
 local meta = {
 	[2619619496] = {
 		title = "Bedwars",
