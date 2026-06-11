@@ -29,7 +29,6 @@ local meta = {
 		) or "main") .. "/NewMainScript.lua",
 	},
 	[7008097940] = {
-		no = true,
 		title = "Ink Game",
 		dev = "vwdev/inkgame.lua",
 		script = "https://raw.githubusercontent.com/VapeVoidware2/VW-Add/" .. (shared.CustomCommit and tostring(
